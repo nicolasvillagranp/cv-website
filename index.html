@@ -14,52 +14,55 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f9fafb;
             display: flex;
             justify-content: center;
             align-items: center;
             color: #333;
-            min-height: 100vh; /* Changed from height to min-height */
-            padding: 20px; /* Optional: Adds some padding for better spacing */
+            min-height: 100vh;
+            padding: 20px;
+            background: linear-gradient(135deg, #f4f4f4, #e1e1e1);
         }
 
         .container {
             background-color: #ffffff;
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 800px;
-            animation: fadeIn 1s ease-in-out;
+            max-width: 900px;
+            animation: fadeIn 1.5s ease-out;
+            overflow: hidden;
         }
 
         h1 {
-            font-size: 2rem;
-            color: #000;
+            font-size: 2.5rem;
+            color: #333;
             margin-bottom: 20px;
-            font-weight: bold;
             text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         h2 {
-            font-size: 1.5rem;
-            color: #000;
+            font-size: 1.8rem;
+            color: #333;
             margin-top: 20px;
             margin-bottom: 15px;
-            font-weight: bold;
-            border-bottom: 2px solid #000;
-            padding-bottom: 5px;
+            font-weight: 600;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
         }
 
         p, ul {
             font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
         }
 
         .cv-section {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         ul {
@@ -71,22 +74,22 @@
             padding: 16px 30px;
             font-size: 18px;
             font-weight: bold;
-            color: #ffffff;
-            background-color: #000;
+            color: #fff;
+            background-color: #0066cc;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: all 0.3s ease;
             width: 100%;
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         .download-btn:hover {
-            background-color: #333;
+            background-color: #005bb5;
         }
 
         .download-btn:active {
-            background-color: #555;
+            background-color: #004d99;
         }
 
         .download-btn:focus {
@@ -104,6 +107,22 @@
                 transform: translateY(0);
             }
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,32 +132,29 @@
 
         <div class="cv-section">
             <h2>Professional Objective</h2>
-            <p>Motivated and hard-working student. Passionate about the interaction between Artificial Intelligence, Mathematics, and finance, looking to pursue a career in the field. Proven ability to work under pressure in difficult situations and provide a high level of service.</p>
+            <p>Motivated and hard-working student passionate about the intersection of Artificial Intelligence, Mathematics, and finance, seeking to develop a career in these fields. Known for working well under pressure and providing a high level of service in complex situations.</p>
         </div>
 
         <div class="cv-section">
             <h2>Education</h2>
-            <p><strong>University of San Diego</strong> - San Diego, EEUU</p>
-            <p>Bachelor’s degree in Mathematical Engineering and Artificial Intelligence (Expected: May 2025)</p>
+            <p><strong>University of San Diego</strong> - San Diego, USA (Expected: May 2025)</p>
             <ul>
-                <li>Winner of a project of entrepeneurship</li>
+                <li>Bachelor’s degree in Mathematical Engineering and Artificial Intelligence</li>
+                <li>Winner of an entrepreneurship project competition</li>
             </ul>
             
-            <p><strong>Universidad Pontificia Comillas, ICAI</strong> - Madrid, Spain</p>
-            <p>Bachelor’s degree in Mathematical Engineering and Artificial Intelligence (Expected: May 2025)</p>
+            <p><strong>Universidad Pontificia Comillas, ICAI</strong> - Madrid, Spain (Expected: May 2025)</p>
             <ul>
                 <li>GPA: 8.1/10.00</li>
                 <li>Honorific Mention in Numerical Methods and Deep Learning II</li>
-                <li>Awarded with an Academic Excellence Scholarship by the Community of Madrid</li>
+                <li>Academic Excellence Scholarship from the Community of Madrid</li>
             </ul>
 
-            <p><strong>Colegio de Fomento Tabladilla</strong> - Seville, Spain</p>
-            <p>Graduated: June 2021</p>
+            <p><strong>Colegio de Fomento Tabladilla</strong> - Seville, Spain (Graduated: June 2021)</p>
             <ul>
                 <li>Sciences Baccalaureate</li>
                 <li>GPA: 10.00/10.00</li>
                 <li>University Access Exam: 13.675/14</li>
-                <li>Academic Fellowship</li>
                 <li>Honorific Mention in Mathematics, Physics, and Chemistry</li>
             </ul>
         </div>
@@ -147,55 +163,55 @@
             <h2>Relevant Experience</h2>
             <p><strong>ICAI Blockchain Club</strong> - Madrid, Spain (2021-Present)</p>
             <ul>
-                <li>Research on blockchain technologies. Development of a blockchain in the field of NFTs.</li>
+                <li>Research on blockchain technologies. Developed a blockchain in the field of NFTs.</li>
             </ul>
 
             <p><strong>ICAI Cybersecurity Club</strong> - Madrid, Spain (2022-2023)</p>
             <ul>
-                <li>Implementation of the cryptosystem RSA and Diffie-Hellman Elliptic Curve.</li>
+                <li>Implemented RSA and Diffie-Hellman Elliptic Curve cryptosystems.</li>
             </ul>
 
             <p><strong>Universidad Pontificia de Comillas ICAI</strong> - Madrid, Spain (2024-Present)</p>
             <ul>
-                <li>Teacher Assistant of Numerical Analysis. Helped design the course workflow and taught exchange students.</li>
+                <li>Teacher Assistant for Numerical Analysis. Designed course workflows and mentored exchange students.</li>
             </ul>
 
             <p><strong>Logixs</strong> - Madrid, Spain (June 2024-August 2024)</p>
             <ul>
-                <li>Generative AI Engineering. Lead the project of an advanced vision system for PDF processing.</li>
+                <li>Led the development of an advanced vision system for PDF processing using Generative AI.</li>
             </ul>
         </div>
 
         <div class="cv-section">
             <h2>Co-Curricular Activities</h2>
             <ul>
-                <li>Private lessons teaching Mathematics and Physics (2019-present).</li>
-                <li>Private lessons teaching Programming (2021-present), specialized in Python, Matlab, and R.</li>
-                <li>Volunteer Work: Collaborated in teaching children in exclusion and poverty situations, Angelman Syndrome Volunteer.</li>
+                <li>Tutoring Mathematics and Physics (2019-present).</li>
+                <li>Tutoring Programming (2021-present), specializing in Python, Matlab, and R.</li>
+                <li>Volunteer work with children in underprivileged situations, and Angelman Syndrome Volunteer.</li>
             </ul>
         </div>
 
         <div class="cv-section">
             <h2>Projects</h2>
             <ul>
-                <li>Music Generation (Deep-vibes): Music generation using Generative Adversarial Networks, Transformers, and Variational Autoencoders.</li>
-                <li>Development of an Encrypted Chat: Diffie-Hellman Elliptic Curve (Number theory).</li>
-                <li>Madrid’s GPS: Implementation of mathematical algorithms to optimize route planning in Madrid’s graph.</li>
-                <li>Optimization of a Stock Portfolio: Developed a portfolio optimization framework using mixed integer linear programming and LSTMs.</li>
-                <li>Finetuning of LLMs: Finetuned a LLAMA model using model distillation under constrained hardware resources.</li>
-                <li>Automatic Speech Recognition: Designed and implemented a fully integrated end-to-end speech recognition system.</li>
-                <li>Research on Bayesian Optimization: Investigated Bayesian priors for hyperparameter search in AI models.</li>
-                <li>Research on Variational Autoencoders: Explored techniques to enrich the latent space representation of VAEs.</li>
+                <li>Music Generation using Generative Adversarial Networks, Transformers, and Variational Autoencoders.</li>
+                <li>Encrypted Chat using Diffie-Hellman Elliptic Curve (Number theory).</li>
+                <li>Route optimization algorithms for Madrid’s urban graph.</li>
+                <li>Portfolio optimization with Mixed Integer Linear Programming and LSTMs.</li>
+                <li>LLM finetuning using model distillation with constrained hardware.</li>
+                <li>End-to-end Speech Recognition System development.</li>
+                <li>Bayesian Optimization for hyperparameter search in AI models.</li>
+                <li>Enhancing Variational Autoencoders latent space representations.</li>
             </ul>
-            <h5>All the projects can be found at: https://github.com/nicolasvillagranp</h5>
+            <h5>Find all projects at: <a href="https://github.com/nicolasvillagranp" target="_blank">GitHub</a></h5>
         </div>
 
         <div class="cv-section">
             <h2>Technical Skills</h2>
             <ul>
                 <li><strong>Languages:</strong> Python, R, MATLAB, C++, C#, Bash, HTML, JavaScript.</li>
-                <li><strong>Developer Tools/Frameworks:</strong> Pytorch, Scikit, Git, Docker, AWS, Unity, BS4, Selenium, Power BI, Tableau, Dash, React, Django, Hadoop, ROS.</li>
-                <li><strong>Database Use:</strong> MySQL, MongoDB, NEO4j, Redis.</li>
+                <li><strong>Frameworks/Tools:</strong> PyTorch, Scikit-learn, Git, Docker, AWS, Unity, BS4, Selenium, Power BI, Tableau, Dash, React, Django, Hadoop, ROS.</li>
+                <li><strong>Databases:</strong> MySQL, MongoDB, NEO4j, Redis.</li>
             </ul>
         </div>
 
@@ -203,9 +219,9 @@
             <h2>General Information</h2>
             <ul>
                 <li><strong>Languages:</strong> Spanish (Native), English (Fluent), French (Basic).</li>
-                <li><strong>Interests:</strong> Sports (Windsurf, Surf, Paddle, Gym), Applied Mathematics, AI, Finance, Business Intelligence, Reading Academic and Novels.</li>
-                <li><strong>Teamwork Experience:</strong> Kanban, Scrum, Project Leader.</li>
-                <li><strong>Courses/Diplomas:</strong> Personal Communication, Communicative and Professional Skills, Foreign Language Studies (ICADE-ICAI).</li>
+                <li><strong>Interests:</strong> Windsurfing, Surfing, Paddle, Gym, Applied Mathematics, AI, Finance, Business Intelligence, Reading.</li>
+                <li><strong>Teamwork Experience:</strong> Kanban, Scrum, Project Leadership.</li>
+                <li><strong>Courses:</strong> Personal Communication, Professional Skills, Foreign Language Studies (ICADE-ICAI).</li>
             </ul>
         </div>
 
@@ -226,6 +242,5 @@
     </script>
 </body>
 </html>
-
 
 
